@@ -1,4 +1,4 @@
-# 🚀 Basic web server 
+# 🚀 Basic mysql server 
 Basic mysql server, include commands for create database dumps and restore data from dump files.
 
 This lab is a basic server save data on databases mysql.
