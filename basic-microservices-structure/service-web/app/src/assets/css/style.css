@@ -1,0 +1,244 @@
+/* globals vars */
+:root {
+  --color-light: #f5f5f5;
+  --color-light-secondary: #c4c4c4;
+  --color-dark: #131c2f;
+  --color-dark-secondary: #1f2a48;
+  --color-info: aqua;
+  --max-width: 800px;
+  --font-family: 'Ubuntu', sans-serif;
+  --font-size-min: 16px;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-min);
+  font-weight: lighter;
+}
+
+body {
+  background-color: #141c2f;
+}
+
+a {
+  color: var(--color-info);
+}
+
+/* general containers */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+}
+.flex-row .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+/* header */
+header#header {
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 100%;
+}
+header#header > .logo, header#header > .dark-mode {
+  color: var(--color-light);
+}
+header#header > .logo h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0;
+}
+header#header > .dark-mode {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* banner */
+section#banner {
+  background-color: var(--color-dark-secondary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+section#banner #share-bio{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+section#banner .container {
+  padding: 30px;
+}
+section#banner #banner-photo {
+  width: 20%;
+}
+section#banner #banner-photo img {
+  border-radius: 50%;
+  width: 100%;
+}
+section#banner #banner-content {
+  width: 80%;
+  padding: 0 30px;
+  color: var(--color-light-secondary);
+  font-weight: normal;
+}
+section#banner #banner-content .bio, 
+section#banner #banner-content .contact-info {
+  line-height: 25px;
+}
+section#banner #banner-content .counters {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+section#banner #banner-content .counters .counter {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px 0 0;
+  background-color: var(--color-dark);
+  padding: 10px;
+  border-radius: 8px;
+}
+section#banner #banner-content .counters .counter i {
+  margin: 0 5px 0 0;
+}
+section#banner #banner-content .counters .counter .number {
+  color: var(--color-info);
+  font-weight: bold;
+}
+
+/* view list */
+section.view-list {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 15px 30px;
+}
+section.view-list > h3 {
+  color: var(--color-light);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 30px 0;
+}
+section.view-list > h3 img {
+  width: 20px;
+
+}
+section.view-list .list .item {
+  margin-bottom: 15px;
+  color: var(--color-light-secondary);
+}
+section.view-list .list .item .icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+section.view-list .list .item .name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+section.view-list .list .item .description {
+  color: var(--color-light);
+}
+section.view-list .list .item .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0;
+}
+section.view-list .list .item .info .badge {
+  border-radius: 4px;
+  padding: 3px 5px;
+  background-color: forestgreen;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  color: var(--color-light);
+}
+
+/* custom list platzi courses */
+#platzi-courses.view-list #courses.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#platzi-courses.view-list #courses.list .item {
+  margin-bottom: 15px;
+  background-color: var(--color-dark-secondary);
+  border-radius: 8pt;
+  padding: 10px;
+  margin-right: 10px;
+  max-width: 33.3%;
+}
+#platzi-courses.view-list .list .item .info .badge.certificate {
+  text-decoration: none;
+}
+
+/* footer */
+footer#footer {
+  border-top: 1px solid var(--color-dark-secondary);
+  color: var(--color-light-secondary);
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* media queries */
+@media (max-width: 799px) {
+  .flex-row .container {
+    flex-direction: column;
+  }
+  section#banner #banner-content {
+    padding: 0;
+    width: 100%;
+  }
+  section#banner .container {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  section#banner #banner-content .counters {
+    justify-content: center;
+  }
+  section#banner #banner-content .counters .counter {
+    text-align: left;
+  }
+  #platzi-courses.view-list #courses.list .item {
+    padding: 10px;
+    margin-right: 5px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+@media (max-width: 480px) {
+  #platzi-courses.view-list #courses.list .item {
+    padding: 10px;
+    margin-right: 5px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
