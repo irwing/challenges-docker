@@ -202,7 +202,6 @@ footer#footer {
   border-top: 1px solid var(--color-dark-secondary);
   color: var(--color-light-secondary);
   padding: 30px;
-  width: 100%;
   text-align: center;
 }
 
@@ -210,6 +209,10 @@ footer#footer {
 @media (max-width: 799px) {
   .flex-row .container {
     flex-direction: column;
+    width: auto;
+  }
+  section.view-list {
+    padding: 15px;
   }
   section#banner #banner-content {
     padding: 0;

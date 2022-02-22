@@ -10,9 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="skeleton-loader.css">
 </head>
 <body>
   <div class="wrapper">
+
     <header id="header" class="flex-row">
       <div class="logo">
         <h1>Irwing Naranjo</h1>
@@ -44,7 +46,7 @@
                 <span title="github projects">projects</span>
               </span>
             </div>
-            <div class="counter">
+            <div class="counter" id="counter-courses">
               <i class="fa fa-school"></i>
               <span>
                 <span class="number">0</span>
@@ -102,67 +104,17 @@
         I learned a bit of platzi
       </h3>
       <div id="courses" class="list">
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
+        <div class="sk--wrapper">
+          <div class="sk--col sk--img">
+            <img class="sk--img-graphic skeleton-loader" />
           </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
-          </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
-          </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso especial de especial Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
-          </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
-          </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
-          </div>
-        </div>
-        <div class="course item">
-          <img src="https://static.platzi.com/media/achievements/platzi-bd.png" alt="Course PHP" class="icon">
-          <h3 class="name"><a href="#">Curso Básico de JavaScript</a></h3>
-          <div class="info">
-            <a href="#" target="_blank" class="badge certificate">
-              View certficate
-            </a>
+          <div class="sk--col sk--details">
+            <div class="sk--row sk--name">
+              <span class="sk--name-text skeleton-loader"></span>
+            </div>
+            <div class="sk--row sk--description">
+              <span class="sk--description-text skeleton-loader"></span>
+            </div>
           </div>
         </div>
       </div>
